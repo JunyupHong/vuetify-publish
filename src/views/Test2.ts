@@ -2,12 +2,11 @@ import Vue from 'vue';
 import { Component } from 'vue-property-decorator';
 
 @Component({})
-export default class extends Vue {
-  private drawer = true;
+export default class Test2 extends Vue {
   private items = [{ title: 'Home', icon: 'dashboard' },
-  { title: 'User Profile', icon: 'account_circle' }];
+  { title: 'User Profile', icon: 'person' }];
 
-  private cardItems = [
+  private firstCardItems = [
     {
       title: 'Daily Sales',
       desc: 'increase in today\' sales',
@@ -25,10 +24,7 @@ export default class extends Vue {
     },
   ];
 
-  private click(title: string) {
-    console.log(title);
-  }
   private mounted() {
-    console.log('mounted');
+    console.log('2');
   }
 }
